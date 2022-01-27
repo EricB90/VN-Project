@@ -1,0 +1,37 @@
+VISUAL NOVEL GAME
+
+CONCEPT DESIGN A GAME THAT TRANSITIONS FROM A SIMPLE RPG COMBAT SCREEN INTO A VISUAL NOVEL WITH PLAYER CHOICES THAT CAN EITHER RAISE OR LOWER A METER TOWARD SUCCESSFUL COMPLETION
+
+LEARN TO ANIMATE SPRITES AND MENUS WITHIN A CANVAS ELEMENT ON THE HTML PAGE
+
+DEFINE ACCEPTABLE INPUT METHODS FOR INTERACTING WITH THE MENUS
+
+DECIDE WHAT DATA YOU'LL BE STORING IN WHAT OBJECTS AND WHETHER YOU'LL BE IMPORTING JS FILES INTO OTHER JS FILES FOR MODULAR PROGRAMMING
+
+/// STORY CONCEPT ///
+
+    * The page will initiate with a retro pixel-art style RPG sequence, giving a brief text introduction before leading immediately into a battle screen. 
+
+    * The player will receive three choices for dealing with their foe: ATTACK - SPARE - FLEE
+
+    * ATTACK and FLEE will be fail-state options leading to a premature GAME OVER screen, while SPARE will trigger the actual beginning of the game. 
+
+    * A new canvas will appear, presenting more polished and artistic visuals appropriate for a visual novel. 
+
+    * The visual novel will revolve around interaction with the foe previously presented in the RPG intro, where dialogue leads to choices that will steadily increase or decrease a meter.
+
+    * If the meter reaches zero, the game will lead to a bad ending.
+
+    * If the dialogue ends with the meter having failed to reach either end, the game will have a neutral ending.
+
+    * If the meter reaches its maximum point, this will lead to the good ending.
+
+/// STRUCTURE NOTES ///
+
+    * The game will be built into a canvas element on an HTML page, the rest of the page serving as an aesthetic frame around the game.
+
+    * The introductory segment will be one canvas that initially loads visibly to the player while the other canvas is hidden. Once the right choice is made, that canvas will be hidden while the other one containing the main game will appear.
+
+    * As this point, I believe the best structural decision will be to have each scene or segment of dialogue take place as a single, class-based object that calls upon the media elements that make up the sprites and menu assets to create a dynamic interface.
+
+    *I might do minor modular programming by having the two different canvases programmed by two separate JS files that are imported into the main app.js.

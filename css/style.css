@@ -1,0 +1,293 @@
+/* font-family: 'VT323', monospace; */
+
+:root {
+    --BG1: #000;
+    --header1Color: #FFF;
+    --canvasBG1: #000;
+    --canvasBorder1: #FFF;
+    --font1: 'VT323', monospace;
+}
+
+/* GENERIC RULES */
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--BG1);
+}
+
+.dungeons-bg {
+    /* padding: 40px 0; */
+    background-color: var(--BG1);
+}
+/* CLOSE GENERIC */
+
+/* HEADER RULES */
+.header {
+    text-align: center;
+}
+
+.header1 {
+    margin: 40px 0 40px 0;
+    color: var(--header1Color);
+    font-family: var(--font1);
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header2 {
+    display: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+/* CLOSE HEADER */
+
+/* MAIN RULES */
+.dungeons-section {
+    position: relative;
+    text-align: center;
+}
+
+.canvas1 {
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--canvasBG1);
+    border: 2px solid var(--canvasBorder1);
+}
+
+.start-game-button {
+    margin: 10px auto;
+    display: block;
+    background-color: var(--BG1);
+    border: none;
+    color: var(--header1Color);
+    font-family: var(--font1);
+    font-size: 40px;
+}
+
+.start-game-button:hover {
+    color: red;
+}
+
+.text-div {
+    position: absolute;
+    top: 320px;
+    left: 450px;
+    width: 600px;
+}
+
+.narrative-text {
+    color: var(--header1Color);
+    font-family: var(--font1);
+    font-size: 30px;
+    text-align: center;
+}
+
+.combat-text {
+    margin-top: 60px;
+    color: var(--header1Color);
+    font-family: var(--font1);
+    font-size: 30px;
+    text-align: center;
+}
+
+.buttons-section {
+    text-align: center;
+}
+
+.continue-button {
+    margin: 10px auto;
+    display: block;
+    background-color: var(--BG1);
+    border: none;
+    color: var(--header1Color);
+    font-family: var(--font1);
+    font-size: 40px;
+}
+
+.continue-button:hover {
+    color: red;
+}
+
+.restart-button {
+    margin: 10px auto;
+    background-color: var(--BG1);
+    border: none;
+    color: var(--header1Color);
+    font-family: var(--font1);
+    font-size: 40px;
+}
+
+.restart-button:hover {
+    color: red;
+}
+
+.skeleton-button {
+    margin: 10px 50px;
+    background-color: var(--BG1);
+    border: none;
+    color: var(--header1Color);
+    font-family: var(--font1);
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.skeleton-button:hover {
+    color: red;
+}
+
+.visual-novel-section {
+    position: relative;
+}
+
+.canvas2 {
+    display: none;
+    margin: 0 auto;
+    padding: 0;
+    border: 3px solid var(--header1Color);
+    border-radius: 10px;
+}
+
+.vn-text-box {
+    position: absolute;
+    top: 300px;
+    left: 410px;
+    display: none;
+    padding: 0px 15px;
+    width: 700px;
+    height: 120px;
+    background: rgba(255, 113, 240, 0.7);
+    border: 3px solid pink;
+    border-radius: 8px;
+}
+
+.vn-text {
+    color: var(--header1Color);
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.heart-meter {
+    position: absolute;
+    top: 20px;
+    left: 360px;
+    display: none;
+    width: 800px;
+    height: 450px;
+}
+
+.vn-continue-button {
+    margin: 10px 0;
+    padding: 8px;
+    background: #FFB5FA;
+    border: 2px solid var(--header1Color);
+    border-radius: 8px;
+    color: var(--header1Color);
+    font-family: cursive;
+    font-size: 20px;
+    transition: background-color 1s ease;
+}
+
+.vn-continue-button:hover {
+    background-color: rgb(194, 97, 113);
+}
+
+.vn-restart-button {
+    margin: 10px 0;
+    padding: 8px;
+    background: #FFB5FA;
+    border: 2px solid var(--header1Color);
+    border-radius: 8px;
+    color: var(--header1Color);
+    font-family: cursive;
+    font-size: 20px;
+    transition: background-color 1s ease;
+}
+
+.vn-restart-button:hover {
+    background-color:rgb(194, 97, 113);
+}
+
+.option-button {
+    margin: 10px;
+    padding: 8px;
+    background: #FFB5FA;
+    border: 2px solid var(--header1Color);
+    border-radius: 8px;
+    color: var(--header1Color);
+    font-family: cursive;
+    font-size: 20px;
+    transition: background-color 1s ease;
+}
+
+.option-button:hover {
+    background-color: rgb(194, 97, 113);
+}
+
+.credits-section {
+    display: none;
+    color: var(--header1Color);
+    text-align: center;
+}
+
+.credits-section a {
+    color: var(--header1Color);
+}
+/* CLOSE MAIN */
+
+/* FOOTER RULES */
+.colophon-section {
+    text-align: center;
+}
+
+.colophon {
+    padding-top: 20px;
+    color: var(--header1Color);
+    font-family: monospace;
+}
+
+.credits-button {
+    margin: 0 auto;
+    background: var(--BG1);
+    color: var(--header1Color);
+    font-family: monospace;
+}
+
+.credits-button:hover {
+    color: red;
+}
+
+.mute-button {
+    margin: 0 0 0 20px;
+    padding: 8px 12px 5px 8px;
+    background: black;
+    border: none;
+    border-radius: 50%;
+}
+
+.mute-button2 {
+    display: none;
+    margin: 0 0 0 20px;
+    padding: 8px 12px 5px 8px;
+    background: #FFB5FA;
+    border: none;
+    border-radius: 50%;
+}
+
+.icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: var(--header1Color);
+}
+
+.img {
+    display: none;
+}
+/* CLOSE FOOTER */

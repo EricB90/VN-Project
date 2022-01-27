@@ -1,0 +1,123 @@
+<!-- LET HELL BEGIN -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DEATH'S EMBRACE</title>
+</head>
+<body>
+    <!-- open dungeons bg section -->
+    <section class="dungeons-bg">
+        <!-- open dating sim bg section -->
+        <section class="visual-novel-bg">
+            <!-- open header -->
+            <header class="header" id="header">
+                <h1 class="header header1" id="header1">death's embrace</h1>
+                <h2 class="header header2" id="header2">
+                    <img src="media/Deaths-Embrace-Banner.png" alt="Skeleton VN Banner">
+                </h2>
+            </header>
+            <!-- close header -->
+            <!-- open main -->
+            <main class="main" id="main">
+                <!-- open dungeons section -->
+                <section class="dungeons-section" id="dungeonsSection">
+                    <canvas class="canvas canvas1" id="canvas1" width="800" height="450"></canvas>
+                    <div class="text-div" id="textDiv"></div>
+                </section>
+                <!-- close dungeons section -->
+                <!-- open dating sim section -->
+                <section class="visual-novel-section" id="vnSection">
+                    <canvas class="canvas canvas2" id="canvas2" width="800" height="450"></canvas>
+                    <div class="vn-text-box" id="vnTextBox"></div>
+                    <div class="heart-meter" id="heartMeter"></div>
+                </section>
+                <!-- close dating sim section -->
+                <!-- open buttons section -->
+                <section class="buttons-section" id="buttonsSection"></section>
+                <!-- close buttons section -->
+                <!-- open credits section -->
+                <section class="credits-section" id="credits">
+                    <h3 class="credits-header">CREDITS</h3>
+                    <p class="credits-text">Track 'Pulse' provided courtesy of artist <a href="https://freemusicarchive.org/music/Bio_Unit" target="_blank">Bio Unit</a> and <a href="https://freemusicarchive.org/music/Bio_Unit/metro/pulsemp3" target="_blank">Free Music Archive</a></p>
+                    <p class="credits-text">Track 'Fragile' provided courtesy of artist <a href="https://freemusicarchive.org/music/lucien-kemper" target="_blank">Lucien Kemper x Fachhochschule Dortmund</a> and <a href="https://freemusicarchive.org/music/lucien-kemper/single/fragile-1" target="_blank">Free Music Archive</a></p>
+                </section>
+                <!-- close credits section -->
+            </main>
+            <!-- close main -->
+            <!-- open footer -->
+            <footer class="footer" id="footer">
+                <!-- open colophon section -->
+                <div class="colophon-section">
+                    <p class="colophon">DEATH'S EMBRACE &copy; 2022 ERIC BENNETT</p>
+                    <button class="credits-button" id="creditsButton">CREDITS</button>
+                    <button class="mute-button" id="muteButton"><svg class="icon icon-music"><use xlink:href="#icon-music"></use></svg></button>
+                    <button class="mute-button2" id="muteButton2"><svg class="icon icon-music"><use xlink:href="#icon-music"></use></svg></button>
+                </div>
+                <!-- close colophon section -->
+                <!-- open sprite block -->
+                <div class="sprite-block">
+                    <img src="media/Start-Screen.png" alt="The Starting Screen" class="img" id="img1">
+                    <img src="media/Dungeon.png" alt="The Starting Dungeon" class="img" id="img2">
+                    <img src="media/Pixel-Skeleton-F1.png" alt="Pixel Skeleton First Frame" class="img" id="img3">
+                    <img src="media/Pixel-Skeleton-F2.png" alt="Pixel Skeleton Second Frame" class="img" id="img4">
+                    <img src="media/Game-Over-One.png" alt="Game Over Screen" class="img" id="img5">
+                    <img src="media/Game-Over-Two.png" alt="Game Over Screen" class="img" id="img6">
+                    <img src="media/VN-BG.png" alt="Visual Novel Background" class="img" id="img7">
+                    <img src="media/Sprite-Default.png" alt="Default Skeleton Sprite" class="img" id="img8">
+                    <img src="media/Sprite-Squinting-Left.png" alt="Skeleton Sprite Squinting To The Left" class="img" id="img9">
+                    <img src="media/Sprite-Squinting-Right-Sweating.png" alt="Skeleton Sprite Squinting To The Right And Sweating" class="img" id="img10">
+                    <img src="media/Sprite-Squinting-Sweating-Talking.png" alt="Skeleton Sprite Squinting Forward, Sweating And Talking" class="img" id="img11">
+                    <img src="media/Sprite-Shrug-Talking.png" alt="Skeleton Sprite Shrugging And Talking" class="img" id="img12">
+                    <img src="media/Sprite-Stare-Talking.png" alt="Skeleton Sprite Talking" class="img" id="img13">
+                    <img src="media/Sprite-Stare-Left.png" alt="Skeleton Sprite Looking To The Left" class="img" id="img14">
+                    <img src="media/Sprite-Squinting-Talking.png" alt="Skeleton Sprite Squinting And Talking" class="img" id="img15">
+                    <img src="media/Sprite-Default-Meter-Talking.png" alt="Skeleton Sprite Looking At Meter" class="img" id="img16">
+                    <img src="media/Sprite-Default-Talking.png" alt="Default Skeleton Sprite Talking" class="img" id="img17">
+                    <img src="media/Sprite-Closed-Eyes-Sweating.png" alt="Skeleton Sprite Eyes Closed And Sweating" class="img" id="img18">
+                    <img src="media/Sprite-Squinting.png" alt="Skeleton Sprite Squinting" class="img" id="img19">
+                    <img src="media/Sprite-Anger-Talking.png" alt="Skeleton Sprite Angry Talking" class="img" id="img20">
+                    <img src="media/Sprite-Default-Left.png" alt="Default Skeleton Sprite Looking Left" class="img" id="img21">
+                    <img src="media/VN-BG-GOOD.png" alt="Good Ending Background" class="img" id="img22">
+                    <img src="media/VN-BG-BAD.png" alt="Bad Ending Background" class="img" id="img23">
+                    <img src="media/Sprite-Shocked.png" alt="Skeleton Sprite Shocked" class="img" id="img24">
+                    <img src="media/Eric.png" alt="A Doodle Of Myself" class="img" id="img25">
+                    <img src="media/Sprite-Shocked-Right.png" alt="Skeleton Sprite Shocked Looking Right" class="img" id="img26">
+                    <img src="media/Final-Screen-Good.png" alt="Good Ending Final Screen" class="img" id="img27">
+                    <img src="media/Final-Screen-Bad.png" alt="Bad Ending Final Screen" class="img" id="img28">
+                    <img src="media/VN-BG-NEUTRAL.png" alt="Neutral Ending Background" class="img" id="img29">
+                    <img src="media/Final-Screen-Neutral.png" alt="Neutral Ending Final Screen" class="img" id="img30">
+                    <img src="media/Final-Screen-Good2.png" alt="Good Ending Final Screen 2" class="img" id="img31">
+                    <img src="media/Final-Screen-Good3.png" alt="Good Ending Final Screen 3" class="img" id="img32">
+                </div>
+                <!-- close sprite block -->
+            </footer>
+            <!-- close footer -->
+        </section>
+        <!-- close dating sim bg section -->
+    </section>
+    <!-- close dungeons bg section -->
+    <!-- open SVG block -->
+    <div class="svg-block">
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <symbol id="icon-music" viewBox="0 0 32 32">
+                    <path d="M30 0h2v23c0 2.761-3.134 5-7 5s-7-2.239-7-5c0-2.761 3.134-5 7-5 1.959 0 3.729 0.575 5 1.501v-11.501l-16 3.556v15.444c0 2.761-3.134 5-7 5s-7-2.239-7-5c0-2.761 3.134-5 7-5 1.959 0 3.729 0.575 5 1.501v-19.501l18-4z"></path>
+                </symbol>
+            </defs>
+        </svg>            
+    </div>
+    <!-- close SVG block -->
+    <!-- open script block -->
+    <div class="script-block">
+        <script src="js/app.js"></script>
+    </div>
+    <!-- close script block -->
+</body>
+</html>
